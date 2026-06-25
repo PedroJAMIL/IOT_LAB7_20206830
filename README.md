@@ -3,7 +3,7 @@
 ## Información del estudiante
 
 - **Curso:** Servicios y Aplicaciones IoT (1TEL05)
-- **Alumno:** Peter Minaya
+- **Alumno:** Pedro Vilcayauri
 - **Código PUCP:** 20206830
 - **Laboratorio:** 7 — Firebase (Auth & Storage) y Ecosistema de Microservicios
 
