@@ -1,0 +1,80 @@
+#!/bin/sh
+# ----------------------------------------------------------------------------
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#    https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+# ----------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------
+# Apache Maven Wrapper startup batch script, version 3.3.2
+# ----------------------------------------------------------------------------
+
+# If JAVA_HOME is not set, try to find java in PATH
+if [ -z "$JAVA_HOME" ]; then
+  javaExecutable="`which java 2>/dev/null`"
+  if [ -n "$javaExecutable" ] && ! [ "`expr \"$javaExecutable\" : '\([^ ]*\)'`" = "no" ]; then
+    _javaHome="`dirname \"$javaExecutable\"`"
+    _javaHome="`dirname \"$_javaHome\"`"
+    JAVA_HOME="$_javaHome"
+  fi
+fi
+
+# resolve links - $0 may be a softlink
+PRG="$0"
+while [ -h "$PRG" ]; do
+  ls=`ls -ld "$PRG"`
+  link=`expr "$ls" : '.*-> \(.*\)$'`
+  if expr "$link" : '/.*' > /dev/null; then
+    PRG="$link"
+  else
+    PRG="`dirname "$PRG"`/$link"
+  fi
+done
+
+PRGDIR="`dirname "$PRG"`"
+MAVEN_PROJECTBASEDIR="${MAVEN_BASEDIR:-"$PRGDIR"}"
+
+# Read properties from .mvn/wrapper/maven-wrapper.properties
+WRAPPER_PROPERTIES="$MAVEN_PROJECTBASEDIR/.mvn/wrapper/maven-wrapper.properties"
+if [ -r "$WRAPPER_PROPERTIES" ]; then
+  distributionUrl=`grep "distributionUrl" "$WRAPPER_PROPERTIES" | cut -d= -f2- | tr -d '\r'`
+fi
+
+# Set MAVEN_HOME from distribution
+MAVEN_DIST_NAME="${distributionUrl##*/}"
+MAVEN_DIST_NAME="${MAVEN_DIST_NAME%.zip}"
+MAVEN_USER_HOME="${MAVEN_USER_HOME:-$HOME/.m2}"
+MAVEN_DIST_DIR="$MAVEN_USER_HOME/wrapper/dists/$MAVEN_DIST_NAME"
+
+if [ ! -d "$MAVEN_DIST_DIR/bin" ]; then
+  mkdir -p "$MAVEN_DIST_DIR"
+  echo "Downloading Maven from $distributionUrl"
+  if command -v curl > /dev/null 2>&1; then
+    curl -fsSL "$distributionUrl" -o "$MAVEN_DIST_DIR.zip"
+  elif command -v wget > /dev/null 2>&1; then
+    wget -q "$distributionUrl" -O "$MAVEN_DIST_DIR.zip"
+  else
+    echo "ERROR: Neither curl nor wget found. Cannot download Maven." >&2
+    exit 1
+  fi
+  unzip -q "$MAVEN_DIST_DIR.zip" -d "$MAVEN_USER_HOME/wrapper/dists/"
+  rm -f "$MAVEN_DIST_DIR.zip"
+fi
+
+MAVEN_HOME="$MAVEN_DIST_DIR"
+MVN_CMD="$MAVEN_HOME/bin/mvn"
+
+exec "$MVN_CMD" "$@"

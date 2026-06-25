@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.BiciPUCP" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pucp_navy</item>
+        <item name="colorPrimaryVariant">@color/pucp_navy</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/pucp_orange</item>
+        <item name="android:statusBarColor">@color/pucp_navy</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <!-- Tema con ActionBar para MainActivity (la necesitaremos en el próximo prompt para el menú) -->
+    <style name="Theme.BiciPUCP.WithActionBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/pucp_navy</item>
+        <item name="colorPrimaryVariant">@color/pucp_navy</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/pucp_orange</item>
+    </style>
+</resources>

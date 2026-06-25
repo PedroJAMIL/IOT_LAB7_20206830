@@ -1,0 +1,57 @@
+# ===== Maven =====
+target/
+!.mvn/wrapper/maven-wrapper.jar
+*.jar
+*.war
+*.ear
+*.class
+HELP.md
+
+# ===== Java =====
+*.java~
+hs_err_pid*
+
+# ===== IntelliJ IDEA =====
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+.idea_modules/
+
+# ===== VS Code =====
+.vscode/
+*.code-workspace
+
+# ===== Android Studio / Gradle =====
+build/
+.gradle/
+local.properties
+*.apk
+*.aab
+*.keystore
+*.jks
+captures/
+.externalNativeBuild/
+.cxx/
+google-services.json
+
+# ===== Sistema Operativo =====
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ===== Logs =====
+*.log
+logs/
+spring.log
+
+# ===== Temporales =====
+*.tmp
+*.swp
+*~

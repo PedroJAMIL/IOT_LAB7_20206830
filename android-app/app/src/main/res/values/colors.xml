@@ -1,0 +1,14 @@
+<resources>
+    <color name="pucp_navy">#0A2240</color>
+    <color name="pucp_orange">#E87722</color>
+    <color name="bici_green">#2E7D32</color>
+    <color name="bici_red">#C62828</color>
+    <color name="background_light">#F5F7FA</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#666666</color>
+    <color name="white">#FFFFFF</color>
+    <color name="card_border_green">#A5D6A7</color>
+    <color name="card_border_red">#EF9A9A</color>
+    <color name="card_bg_green">#E8F5E9</color>
+    <color name="card_bg_red">#FFEBEE</color>
+</resources>

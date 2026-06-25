@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">BiciPUCP</string>
+
+    <!-- Login -->
+    <string name="login_titulo">BiciPUCP</string>
+    <string name="login_subtitulo">Smart Bike Sharing IoT</string>
+    <string name="login_correo">Correo PUCP</string>
+    <string name="login_contrasena">Contraseña</string>
+    <string name="login_btn_ingresar">INGRESAR</string>
+    <string name="login_no_cuenta">¿No tienes cuenta? Regístrate</string>
+
+    <!-- Registro -->
+    <string name="registro_titulo">AFILIACIÓN DE CAMPUS IoT</string>
+    <string name="registro_subtitulo">Ingrese sus credenciales de alumno</string>
+    <string name="registro_nombre">Nombre Completo</string>
+    <string name="registro_correo">Correo PUCP</string>
+    <string name="registro_contrasena">Contraseña</string>
+    <string name="registro_codigo">Código PUCP (8 dígitos)</string>
+    <string name="registro_pin">PIN Candado IoT (4 dígitos)</string>
+    <string name="registro_btn">VALIDAR Y REGISTRAR</string>
+    <string name="registro_validando">Validando en Spring Boot…</string>
+
+    <!-- Errores genéricos -->
+    <string name="error_campos_vacios">Todos los campos son obligatorios</string>
+    <string name="error_codigo_formato">El código debe tener 8 dígitos</string>
+    <string name="error_pin_formato">El PIN debe tener 4 dígitos</string>
+    <string name="error_red">No se pudo conectar al servidor. Verifique que el orquestador esté corriendo</string>
+
+    <!-- MainActivity (máquina de estados) -->
+    <string name="estado_activo">ESTADO: EN GRACIA</string>
+    <string name="estado_expirado">ESTADO: EXPIRADO</string>
+    <string name="texto_candado_energizado">Candado IoT energizado</string>
+    <string name="texto_retire_bicicleta">Retire la bicicleta de la estación</string>
+    <string name="texto_candado_trabado">Candado vuelto a trabar</string>
+    <string name="texto_tiempo_expirado">Tiempo de gracia expirado - Candado trabado por seguridad</string>
+    <string name="btn_solicitar_desbloqueo">SOLICITAR NUEVO DESBLOQUEO</string>
+    <string name="dialog_titulo_pin">Ingrese su PIN de candado IoT</string>
+    <string name="dialog_pin_hint">PIN (4 dígitos)</string>
+    <string name="dialog_btn_confirmar">CONFIRMAR</string>
+    <string name="dialog_btn_cancelar">Cancelar</string>
+    <string name="menu_mi_carne">Mi Carné IoT</string>
+    <string name="menu_cerrar_sesion">Cerrar sesión</string>
+
+    <!-- CarneActivity -->
+    <string name="carne_titulo">Mi Carné IoT</string>
+    <string name="carne_credencial">CREDENCIAL VIRTUAL PUCP</string>
+    <string name="carne_btn_subir">SUBIR FOTO</string>
+    <string name="carne_alumno">ALUMNO</string>
+    <string name="carne_codigo">CÓDIGO</string>
+    <string name="carne_estado_habilitado">● HABILITADO</string>
+    <string name="carne_url_storage">URL Firebase Storage (En DB):</string>
+    <string name="carne_subiendo">Subiendo foto…</string>
+    <string name="carne_subida_ok">Foto subida exitosamente</string>
+    <string name="carne_subida_error">Error al subir la foto</string>
+</resources>

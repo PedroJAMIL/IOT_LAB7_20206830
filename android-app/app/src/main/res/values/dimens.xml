@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="padding_screen">24dp</dimen>
+    <dimen name="padding_card">20dp</dimen>
+    <dimen name="margin_field">12dp</dimen>
+    <dimen name="text_title">24sp</dimen>
+    <dimen name="text_subtitle">14sp</dimen>
+    <dimen name="text_body">16sp</dimen>
+    <dimen name="text_countdown">72sp</dimen>
+    <dimen name="corner_radius">12dp</dimen>
+</resources>

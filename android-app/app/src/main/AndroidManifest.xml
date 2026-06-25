@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Para Android 13+ (API 33+) acceso a fotos via Photo Picker NO requiere permisos -->
+    <!-- Para versiones antiguas (API 24-32) usamos READ_EXTERNAL_STORAGE -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BiciPUCP"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".auth.RegistroActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".main.MainActivity"
+            android:theme="@style/Theme.BiciPUCP.WithActionBar"
+            android:exported="false" />
+
+        <activity
+            android:name=".carne.CarneActivity"
+            android:theme="@style/Theme.BiciPUCP.WithActionBar"
+            android:exported="false" />
+    </application>
+</manifest>
