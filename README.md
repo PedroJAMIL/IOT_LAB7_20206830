@@ -1,4 +1,5 @@
 # IOT_LAB7_20206830 — BiciPUCP
+# Video Explicativo: https://www.youtube.com/watch?v=D-FpqO-XXqQ
 
 Laboratorio 7 del curso de Servicios y Aplicaciones IoT (1TEL05) — PUCP.
 Sistema de bike sharing con candados IoT validados por microservicios Spring Boot + app Android nativa + Firebase (Auth, Firestore, Storage).
